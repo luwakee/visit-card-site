@@ -1,5 +1,91 @@
-body{
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html{
     margin: 0%;
-    overflow: hidden;
-    background: rgb(17, 17, 19);
+		padding: 0;
+		margin: 0;
+		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+		background-color: #fff;
+		color: #000;
+		
+}
+
+body {
+	display: block;
+	margin: 8px;
+}
+
+
+main {
+	position: fixed;
+	z-index: 1;
+}
+
+.container, .links {
+	display: -moz-box;
+	display: flex;
+	-moz-box-pack: center;
+	justify-content: center;
+}
+
+main {
+	padding:5rem 0;
+	-moz-box-flex:1;
+	flex:1 1;
+	display:-moz-box;
+	display: flex;
+	-moz-box-orient:vertical;
+	-moz-box-direction:normal;
+	flex-direction:column;
+	-moz-box-pack:center;
+	justify-content:center;
+	-moz-box-align:center;
+	align-items:center
+}
+
+.container,.links {
+	display:-moz-box;
+	display:fixed;
+	-moz-box-pack:center;
+	justify-content:center
+}
+
+.links {
+	list-style:none;
+	margin:0;
+	padding:0;
+	flex-wrap:wrap
+}
+
+.links>li {
+	padding:.5rem
+}
+
+.links>li>img {
+	width: 3rem;
+	vertical-align:middle;
+	margin-right:.2rem
+}
+
+a { 
+	color:#9966CC;
+}
+
+a:hover {
+	text-decoration:none
+}
+#tsparticles {
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	z-index:0
+}
+
+.down-title {
+	font-size: 10px;
+	color: rgba(0, 0, 0, .30)
 }

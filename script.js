@@ -6,13 +6,13 @@
     h = canvas.height = innerHeight,
     particles = [],
     properties = {
-        bgColor             : 'rgba(17, 17, 19, 1)',
-        particleColor       : 'rgba(255, 40, 40, 1)',
+        bgColor             : 'rgba(255, 255, 255, 0.5)',
+        particleColor       : 'rgba(139, 0, 255, 0.5)',
         particleRadius      : 3,
-        particleCount       : 60,
+        particleCount       : 80,
         particleMaxVelocity : 0.5,
         lineLength          : 150,
-        particleLife        : 6,
+        particleLife        : 5,
     };
 
     document.querySelector('body').appendChild(canvas);
@@ -72,7 +72,7 @@
                 if(length < properties.lineLength){
                     opacity = 1-length/properties.lineLength;
                     ctx.lineWidth = '0.5';
-                    ctx.strokeStyle = 'rgba(255, 40, 40, '+opacity+')';
+                    ctx.strokeStyle = 'rgba(48, 186, 143, '+opacity+')';
                     ctx.beginPath();
                     ctx.moveTo(x1, y1);
                     ctx.lineTo(x2, y2);
